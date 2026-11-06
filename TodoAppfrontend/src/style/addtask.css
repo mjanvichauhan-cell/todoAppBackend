@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 38px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 35px rgba(40, 40, 80, 0.07);
+    border: 1px solid #eeeeF5;
+}
+
+.container h1 {
+    color: #25243a;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: -0.8px;
+}
+
+.container label {
+    display: block;
+    color: #44445a;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    margin-top: 20px;
+}
+
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e3e3ed;
+    border-radius: 10px;
+    outline: none;
+    background: #fafaff;
+    color: #29283d;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.container input:focus,
+.container textarea:focus {
+    border-color: #6558e8;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(101, 88, 232, 0.10);
+}
+
+.container input::placeholder,
+.container textarea::placeholder {
+    color: #a2a2b3;
+}
+
+.container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+    background: #6558e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.submit:hover {
+    background: #5144d0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(101, 88, 232, 0.22);
+}
+
+.submit:active {
+    transform: translateY(0);
+}
+
+.link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    color: #6558e8;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.link:hover {
+    color: #5144d0;
+    text-decoration: underline;
+}
+
+.container .link {
+    text-align: center;
+}
+
+.container input {
+    margin-bottom: 5px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container label {
+    text-align: left;
+}
+
+.container input {
+    display: block;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    color: #6558e8;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #5144d0;
+    text-decoration: underline;
+}
+
+.container:has(.link) {
+    max-width: 480px;
+    padding: 40px;
+}
+
+.container:has(.link) h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .container:has(.link) {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 25px auto;
+        padding: 24px 18px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+}

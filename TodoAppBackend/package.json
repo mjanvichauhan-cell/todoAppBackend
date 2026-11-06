@@ -1,0 +1,26 @@
+{
+  "name": "todoappbackend",
+  "version": "1.0.0",
+  "description": "this is our first mern project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjanvichauhan-cell"
+  },
+  "license": "ISC",
+  "author": "janvichauhan",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.8.0",
+    "nodemon": "^3.1.14"
+  }
+}

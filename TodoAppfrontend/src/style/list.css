@@ -1,0 +1,133 @@
+.list-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(40, 40, 80, 0.05);
+}
+
+.list-container h1 {
+    color: #25243a;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.delete-multiple {
+    margin-bottom: 20px;
+    padding: 11px 22px;
+    background: #fff0f0;
+    color: #e05252;
+    border: 1px solid #ffdada;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55px 70px 1.2fr 2fr 160px;
+    list-style: none;
+    border: 1px solid #eeeeF4;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.list-header {
+    background: #f5f4ff;
+    color: #6256d9;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 17px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    min-width: 0;
+    padding: 17px 12px;
+    display: flex;
+    align-items: center;
+    color: #55556a;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #eeeeF4;
+    overflow-wrap: anywhere;
+    transition: background 0.2s ease;
+}
+
+.task-list li:nth-child(10n + 6),
+.task-list li:nth-child(10n + 7),
+.task-list li:nth-child(10n + 8),
+.task-list li:nth-child(10n + 9),
+.task-list li:nth-child(10n + 10) {
+    background: #ffffff;
+}
+
+.list-item:hover {
+    background: #faf9ff;
+}
+
+.list-item input,
+.list-header input {
+    width: 17px;
+    height: 17px;
+    accent-color: #6558e8;
+    cursor: pointer;
+}
+
+.delete-item,
+.update-item {
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-item:not(.delete-multiple) {
+    background: #fff0f0;
+    color: #df5252;
+    margin-right: 7px;
+}
+
+.delete-item:hover {
+    background: #ffe0e0;
+}
+
+.update-item {
+    background: #f0eeff;
+    color: #6558e8;
+}
+
+.update-item:hover {
+    background: #e4e0ff;
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        padding: 18px 12px;
+        overflow-x: auto;
+    }
+
+    .list-container h1 {
+        font-size: 25px;
+    }
+
+    .task-list {
+        min-width: 750px;
+    }
+}
+
+@media (max-width: 480px) {
+    .list-container {
+        padding: 15px 10px;
+    }
+}
